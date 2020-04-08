@@ -1,0 +1,6 @@
+model_checkpoint_path: "/media/flash/ExTra/ulf_focdef/logs/ckpt/model.ckpt-25999"
+all_model_checkpoint_paths: "/media/flash/ExTra/ulf_focdef/logs/ckpt/model.ckpt-23999"
+all_model_checkpoint_paths: "/media/flash/ExTra/ulf_focdef/logs/ckpt/model.ckpt-24499"
+all_model_checkpoint_paths: "/media/flash/ExTra/ulf_focdef/logs/ckpt/model.ckpt-24999"
+all_model_checkpoint_paths: "/media/flash/ExTra/ulf_focdef/logs/ckpt/model.ckpt-25499"
+all_model_checkpoint_paths: "/media/flash/ExTra/ulf_focdef/logs/ckpt/model.ckpt-25999"
