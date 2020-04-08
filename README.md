@@ -1,8 +1,6 @@
 # lightfield_focdef
 code for based for light field reconstruction from focus-defocus pairs
 
-### Training and testing
-
 # Training code:
 Run nbs/ulf_focdef_train.ipynb
 
