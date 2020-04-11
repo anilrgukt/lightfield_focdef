@@ -60,7 +60,7 @@ class illiumTools():
 		pH = patches.shape[-3]
 		pW = patches.shape[-2]
 		pC = patches.shape[-1]
-		print 'patch shape', patches.shape
+		#print 'patch shape', patches.shape
 		#print 'lf', lf, pH, oP
 		#if pH != self.s:
 		#	off = (pH-self.s)/2
@@ -74,11 +74,11 @@ class illiumTools():
 				patches = patches.reshape(patches.shape[0],v*v,pH,pW,pC)
 				patches = patches[:,:,offset2:-offset2,offset2:-offset2,:]
 			else:
-				print 'not lf', patches.shape, offset2
+				#print 'not lf', patches.shape, offset2
 				patches = patches[:,offset2:-offset2,offset2:-offset2,:]
-				print 'not lf', patches.shape
+				#print 'not lf', patches.shape
 		#patches = patches[:,offset:-offset,offset:-offset,:]
-		print 'patches shape', patches.shape
+		#print 'patches shape', patches.shape
 
 		if not lf:
 			img = np.zeros((H,W,pC))
