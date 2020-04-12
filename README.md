@@ -33,5 +33,5 @@ https://drive.google.com/drive/folders/1Ja2bFg9ThpjgRHw2Wg0gNubdKvOlJA6q?usp=sha
          volume={6}, 
          number={}, 
          pages={304-316},
-         }
+}
 ```
