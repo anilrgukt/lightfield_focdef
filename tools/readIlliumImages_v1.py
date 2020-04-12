@@ -1,7 +1,6 @@
 import matplotlib.image as mplimg
 import numpy as np
 import cv2
-from scipy.misc import imsave
 import time
 
 class illiumTools():
@@ -30,7 +29,7 @@ class illiumTools():
 
 	def extract_patches(self, lf):
 		if self.verbosity:
-			print 'extracting patches'
+			print('Extracting patches')
 		P = self.p
 		S = self.s
 
@@ -49,11 +48,11 @@ class illiumTools():
 
 	def combine_patches(self, patches,rlist,clist,lf=0):
 		if self.verbosity:
-			print 'combining the patches'
+			print ('Combining patches')
 		H = self.viewH
 		W = self.viewW
 		oP = self.coP# 90 #self.op # output patchsize
-		offset = (self.p-oP)/2 # offset for 
+		offset = (self.p-oP)//2 # offset for 
 		
 		
 		# p - 60, op- 40, patch - 50
@@ -68,7 +67,7 @@ class illiumTools():
 		#### This offset is to further crop the prediction and stride should be planned accordingly
 		
 		if pH != oP:
-			offset2 = (pH-oP)/2
+			offset2 = (pH-oP)//2
 			if lf:
 				v = patches.shape[1]
 				patches = patches.reshape(patches.shape[0],v*v,pH,pW,pC)
@@ -124,8 +123,8 @@ class illiumTools():
 		#fullLF = fullLF/255.0
 		fullLF = fullLF/65535.0
 
-		viewH = fullLF.shape[0]/self.numXs
-		viewW = fullLF.shape[1]/self.numYs
+		viewH = fullLF.shape[0]//self.numXs
+		viewW = fullLF.shape[1]//self.numYs
 		self.viewH = viewH
 		self.viewW = viewW
 	
@@ -147,7 +146,7 @@ class illiumTools():
 		viewH = fullLF.shape[2]
 		viewW = fullLF.shape[3]
 		# print 'H,W,', viewH, viewW
-		indRange = numViews - (self.angRes/2)*2
+		indRange = numViews - (self.angRes//2)*2
 		selInd = range(indRange**2)		
 		import random
 		random.seed(123)
@@ -203,7 +202,7 @@ class illiumTools():
 		code = code.swapaxes(0,-1).squeeze() # v2,p,p,3,v1
 		code = code[np.newaxis,:] # 1,v2,p,p,3,v1
 		code = code.swapaxes(0,-1).squeeze()
-		print 'code shape', code.shape # v1,v2,p,p,3
+		print ('code shape', code.shape) # v1,v2,p,p,3
 
 		#code = np.expand_dims(code,0) # 1,v,v,P,P,3
 		#code = code.repeat(in_shape[0], 0) # N, v, v, P, P, 3
