@@ -25,5 +25,13 @@ https://drive.google.com/drive/folders/1Ja2bFg9ThpjgRHw2Wg0gNubdKvOlJA6q?usp=sha
 
 # Citation
 ```
-@ARTICLE{8878019, author={A. K. {Vadathya} and S. {Girish} and K. {Mitra}}, journal={IEEE Transactions on Computational Imaging}, title={A Unified Learning-Based Framework for Light Field Reconstruction From Coded Projections}, year={2020}, volume={6}, number={}, pages={304-316},}
+@ARTICLE{8878019, 
+         author={A. K. {Vadathya} and S. {Girish} and K. {Mitra}}, 
+         journal={IEEE Transactions on Computational Imaging}, 
+         title={A Unified Learning-Based Framework for Light Field Reconstruction From Coded Projections}, 
+         year={2020}, 
+         volume={6}, 
+         number={}, 
+         pages={304-316},
+         }
 ```
