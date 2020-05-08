@@ -1,4 +1,4 @@
-# Light Field Reconstruction using Focus-Defocus pair
+# Light Field Reconstruction using Coded images 
 - Official Tensorflow implementation for our [TCI paper](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8878019) on A Unified Learning-Based Framework for Light Field Reconstruction From Coded Projections
 
 # Demo Video
